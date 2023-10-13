@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Rubik&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* background-color: #24252A; */
+}
+
+li,a,button {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+img{
+    height: 60px;
+    width: 90px;
+}
+
+.logo{
+    cursor: pointer;
+}
+.nav-link{
+    list-style: none;
+}
+
+.nav-link li{
+    display: inline-block;
+    padding: 0px 20px;
+ 
+
+}
+
+.nav-link li a{
+    margin-left: 100px;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-link li a:hover{
+    color: rgba(157, 34, 34, 0.901);
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(210, 210, 210, 0.897);
+}
+@media(max-width:445px){
+    .nav-link li a{
+        font-size: 2vw;
+    }
+    button{
+        /* margin-right: 0.5vw; */
+        padding: 5%;
+        font-size: 2vw;
+    }
+    .logo{
+        height: 20vw;
+        width: 10vw;
+        padding: 0%;
+    }
+}
